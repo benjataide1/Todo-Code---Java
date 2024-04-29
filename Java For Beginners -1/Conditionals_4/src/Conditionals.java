@@ -6,7 +6,6 @@ public class Conditionals {
         int num2 = 10;
         System.out.println(num2 + (num2 * 0.10));
 
-
         if (num2 > num1) {
             System.out.println("The num2 is mayor than num1 ");
         } else if (num2 < num1) {
@@ -18,7 +17,6 @@ public class Conditionals {
                 System.out.println("Ocurrio un Error");
             }
         }
-
 
     }
 }

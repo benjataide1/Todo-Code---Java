@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Condicional_Ternario {
-    public static void main(String[] args) {
 
+public class Conditional_Ternario {
+    public static void main(String[] args) {
 
         double promedio;
         String confitionFinal;
@@ -16,6 +16,7 @@ public class Condicional_Ternario {
 
         System.out.println("Nota final: " + confitionFinal);
 
-
     }
 }
+
+
