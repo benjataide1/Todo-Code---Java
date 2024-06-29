@@ -8,6 +8,8 @@ public class Inheritance {
         employee.getLast_name();
         employee.getNum_legajo();
 
+        System.out.println("-".repeat(30));
+
         Consultant consultant = new Consultant();
 
         consultant.getId();
