@@ -1,11 +1,4 @@
-package logic;
+package interfaze;
 
 public interface IAgua {
-
-
-    void attackHidrobomba();
-
-    void attackBurbuja();
-
-    void attackPistolaAgua();
 }

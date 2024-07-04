@@ -1,9 +1,4 @@
-package logic;
+package interfaze;
 
 public interface IElectrico {
-
-    public void attackImpactrueno();
-
-    void attackPunioTrueno();
-
 }

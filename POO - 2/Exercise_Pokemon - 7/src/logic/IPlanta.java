@@ -1,9 +1,4 @@
-package logic;
+package interfaze;
 
-public interface IPlanta {
-
-    void attackDrenaje();
-
-    void attackParalizar();
-
+public class IPlanta {
 }
