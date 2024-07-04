@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23d5f191-a478-40e2-bf16-646d38aad259" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Bulbasur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Bulbasur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Charmander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Charmander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ExcerciseIntegrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ExcerciseIntegrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/IAgua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/IAgua.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/IElectrico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/IElectrico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/IFuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/IFuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/IPlanta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/IPlanta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Pikachu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Pikachu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Squirtle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Squirtle.java" afterDir="false" />
-    </list>
+    <list default="true" id="23d5f191-a478-40e2-bf16-646d38aad259" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +38,6 @@
     "Application.ExcerciseIntegrador.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "benjaDev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/POO - 2/Exercise_Pokemon - 7"
   }
