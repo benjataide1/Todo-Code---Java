@@ -24,6 +24,7 @@ public class Bulbasur extends Pokemon implements IPlanta {
 
     }
 
+    //! Methods Interface IPlanta
     @Override
     public void attackDrenaje() {
         System.out.println("Hi, I'am bulbasur and this is my attack Drenaje");
