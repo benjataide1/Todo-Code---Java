@@ -10,7 +10,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="eca34bb96235bc30afbc8f8d1acd42168d123a4d" />
+        <entry key="$PROJECT_DIR$/.." value="benjaDev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -29,11 +29,12 @@
     "git-widget-placeholder": "benjaDev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/POO - 2"
+    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/POO - 2/Collections - 8/LinkedList_ArrayList - 3"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Benja\code\JAVA\Todo Code\POO - 2\Collections - 8\LinkedList_ArrayList - 3\src" />
       <recent name="E:\Benja\code\JAVA\Todo Code\POO - 2" />
     </key>
   </component>
