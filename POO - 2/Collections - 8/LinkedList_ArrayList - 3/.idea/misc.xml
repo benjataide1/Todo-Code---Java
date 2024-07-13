@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" default="true">
 =======
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
 >>>>>>> c1c01ea ( LinkedList / ArrayList - 3)
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
+=======
+  <component name="ProjectRootManager" version="2" default="true">
+>>>>>>> development
+>>>>>>> 020e57af288f0a70768a52078af8546f6bd6baf3
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
