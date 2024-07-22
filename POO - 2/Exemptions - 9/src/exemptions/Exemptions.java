@@ -11,6 +11,8 @@ public class Exemptions {
         } catch (Exception e) {
 //            System.out.println("No se puede dividir por zeroooo!!!");
             System.out.println("La posicion 4 es: " + ages[4]);
+        }finally {
+            System.out.println("Yo siempre me ejecuto");
         }
 
     }
