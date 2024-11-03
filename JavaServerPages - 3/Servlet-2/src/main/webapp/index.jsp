@@ -14,6 +14,17 @@
 
   </form>
 
+  <br>
+
+  <h1>See list of Users</h1>
+  <p>Para ver los datos de los Usuarios cargados haga click en el siguiente boton</p>
+
+  <form action="SvUser" method="get">
+    <button type="submit">Get User</button>
+
+
+
+  </form>
 </body>
 
 </html>
