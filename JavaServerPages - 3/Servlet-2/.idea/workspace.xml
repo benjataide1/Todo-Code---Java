@@ -82,6 +82,7 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
+      <module name="Servlet-2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
