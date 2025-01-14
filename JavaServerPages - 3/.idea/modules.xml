@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaServerPages - 3.iml" filepath="$PROJECT_DIR$/.idea/JavaServerPages - 3.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Servlet-2/Servlet-2.iml" filepath="$PROJECT_DIR$/Servlet-2/Servlet-2.iml" />
+>>>>>>> development
     </modules>
   </component>
 </project>
