@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Conditionals_4/Conditionals_4.iml" filepath="$PROJECT_DIR$/Conditionals_4/Conditionals_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructuras_Repetitivas_5/Estructuras_Repetitivas_5.iml" filepath="$PROJECT_DIR$/Estructuras_Repetitivas_5/Estructuras_Repetitivas_5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld_1/HelloWorld_1.iml" filepath="$PROJECT_DIR$/HelloWorld_1/HelloWorld_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java For Beginners -1.iml" filepath="$PROJECT_DIR$/.idea/Java For Beginners -1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OperadoresAritmeticos_3/OperadoresAritmeticos_3.iml" filepath="$PROJECT_DIR$/OperadoresAritmeticos_3/OperadoresAritmeticos_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestCapas_7/TestCapas_7.iml" filepath="$PROJECT_DIR$/TestCapas_7/TestCapas_7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Variables_2/Variables_2.iml" filepath="$PROJECT_DIR$/Variables_2/Variables_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vectores_Matrices_6/Vectores_Matrices_6.iml" filepath="$PROJECT_DIR$/Vectores_Matrices_6/Vectores_Matrices_6.iml" />
+    </modules>
+  </component>
+</project>
