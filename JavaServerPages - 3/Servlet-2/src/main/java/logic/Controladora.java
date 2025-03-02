@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Controladora {
 
-
     ControllerPersistence control = new ControllerPersistence();
 
     public void createUser(User user) {
