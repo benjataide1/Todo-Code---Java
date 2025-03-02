@@ -1,7 +1,15 @@
 package logic;
 
+import javax.persistence.*;
+
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+
+    @Basic
     private String dni;
     private String name;
     private String lastname;
@@ -15,6 +23,15 @@ public class User {
         this.lastname = lastname;
         this.phone = phone;
         this.dni = dni;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDni() {
