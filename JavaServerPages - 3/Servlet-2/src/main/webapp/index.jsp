@@ -22,8 +22,6 @@
   <form action="SvUser" method="get">
     <button type="submit">Get User</button>
 
-
-
   </form>
 </body>
 

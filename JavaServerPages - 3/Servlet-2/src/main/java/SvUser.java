@@ -1,4 +1,4 @@
-import logic.Controladora;
+import logic.Controller;
 import logic.User;
 
 
@@ -16,7 +16,6 @@ import java.util.List;
 //? Cuando se ejecuta mi JSP y este esta conectado a un Servlet, se ejecuta o se muestra en la direccion "/SvUser""
 public class SvUser extends HttpServlet {
 
-    Controladora control = new Controladora();
 
 
     @Override
@@ -27,13 +26,10 @@ public class SvUser extends HttpServlet {
         String lastname = req.getParameter("lastname");
         String phone = req.getParameter("phone");
 
-        User user = new User(name,dni,lastname,phone);
-        control.createUser(user);
-
-
-        resp.sendRedirect("index.jsp"); //! Redirecciono o envio la respondo a un jsp
-
-
+        System.out.println("phone = " + phone);
+        System.out.println("dni = " + dni);
+        System.out.println("lastname = " + lastname);
+        System.out.println("name = " + name);
     }
 
 
@@ -41,7 +37,7 @@ public class SvUser extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
 
-        List<User> userList = control.listUser();
+        List<User> userList = new ArrayList<>();
 
 
 

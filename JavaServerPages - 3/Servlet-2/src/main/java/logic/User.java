@@ -1,15 +1,14 @@
 package logic;
 
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
-
 import javax.persistence.*;
 
 @Entity
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
     @Basic
     private String dni;
     private String name;
@@ -24,6 +23,15 @@ public class User {
         this.dni = dni;
         this.lastname = lastname;
         this.phone = phone;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDni() {
