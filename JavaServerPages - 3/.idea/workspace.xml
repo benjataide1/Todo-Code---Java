@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e0e8032e-3ee0-43c6-b6ae-56734ed56e93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - 2/Generics - 13/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Generics - 13/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - 2/Polimorfismo - 3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Polimorfismo - 3/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +29,13 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "development",
+    "git-widget-placeholder": "benjaDev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/JavaServerPages - 3/Servlet-2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Benja/code/JAVA/Todo Code/JavaServerPages - 3/Servlet-2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
