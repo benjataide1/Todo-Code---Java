@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0e8032e-3ee0-43c6-b6ae-56734ed56e93" name="Changes" comment="" />
+    <list default="true" id="e0e8032e-3ee0-43c6-b6ae-56734ed56e93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Generics - 13/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Generics - 13/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Polimorfismo - 3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Polimorfismo - 3/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2rdREbt5tpBBkIxUtYs415yBQ7T" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,22 +33,10 @@
     "git-widget-placeholder": "development",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/JavaServerPages - 3/Servlet-2"
+    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/JavaServerPages - 3/Servlet-2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Servlet-2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Servlet-2" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

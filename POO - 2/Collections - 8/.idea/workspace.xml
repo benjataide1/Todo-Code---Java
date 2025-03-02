@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a82f21e-07a2-44ee-adf4-f0245aa1c8d6" name="Changes" comment="" />
+    <list default="true" id="1a82f21e-07a2-44ee-adf4-f0245aa1c8d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../JavaServerPages - 3/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaServerPages - 3/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaServerPages - 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaServerPages - 3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generics - 13/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Generics - 13/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,16 +35,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LinkedLists.executor": "Run",
+    "Application.TestHashMap.executor": "Coverage",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "benjaDev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/JavaServerPages - 3/Servlet-2",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/POO - 2/Polimorfismo - 3",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -47,5 +59,13 @@
       <updated>1720310723637</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Collections___8$LinkedLists.ic" NAME="LinkedLists Coverage Results" MODIFIED="1740890303917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>linkedlists.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Collections___8$TestHashMap.ic" NAME="TestHashMap Coverage Results" MODIFIED="1740890633272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>testHashMap.*</FILTER>
+    </SUITE>
   </component>
 </project>
