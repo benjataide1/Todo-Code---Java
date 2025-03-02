@@ -18,11 +18,11 @@ public class User {
     public User() {
     }
 
-    public User(String name, String lastname, String phone,String dni) {
+    public User(String name, String dni, String lastname, String phone) {
         this.name = name;
+        this.dni = dni;
         this.lastname = lastname;
         this.phone = phone;
-        this.dni = dni;
     }
 
 
@@ -66,10 +66,13 @@ public class User {
         this.phone = phone;
     }
 
+
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("User{");
-        sb.append("dni='").append(dni).append('\'');
+        sb.append("id=").append(id);
+        sb.append(", dni='").append(dni).append('\'');
         sb.append(", name='").append(name).append('\'');
         sb.append(", lastname='").append(lastname).append('\'');
         sb.append(", phone='").append(phone).append('\'');
