@@ -2,7 +2,6 @@ package logic;
 
 import persistence.ControllerPersistence;
 import persistence.UserJpaController;
-
 import java.util.List;
 
 public class Controller {
