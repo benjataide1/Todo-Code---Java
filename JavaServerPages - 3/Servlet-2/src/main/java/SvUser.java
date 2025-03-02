@@ -15,7 +15,7 @@ import java.util.List;
 @WebServlet(name = "svusers", urlPatterns = {"/SvUser"})
 //? Cuando se ejecuta mi JSP y este esta conectado a un Servlet, se ejecuta o se muestra en la direccion "/SvUser""
 public class SvUser extends HttpServlet {
-
+    Controller controller = new Controller();
 
 
     @Override
@@ -26,10 +26,10 @@ public class SvUser extends HttpServlet {
         String lastname = req.getParameter("lastname");
         String phone = req.getParameter("phone");
 
-        System.out.println("phone = " + phone);
-        System.out.println("dni = " + dni);
-        System.out.println("lastname = " + lastname);
-        System.out.println("name = " + name);
+        User user = new User(name, lastname, phone, dni);
+        controller.creaUser(user);
+
+        resp.sendRedirect("index.jsp");
     }
 
 
@@ -37,12 +37,11 @@ public class SvUser extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
 
-        List<User> userList = new ArrayList<>();
-
+        List<User> userList = controller.getUsers();
 
 
         HttpSession mysession = req.getSession(); //! Clase especial para tomar la sesion del usuario que esta ejecutando la app web en el momento - Es como la identificacion del usuario
-        mysession.setAttribute("userList",userList);
+        mysession.setAttribute("userList", userList);
 
         resp.sendRedirect("showUser.jsp"); //! Redirecciono o envio la respondo a un jsp
 
