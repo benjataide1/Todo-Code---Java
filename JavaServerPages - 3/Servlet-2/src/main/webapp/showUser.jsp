@@ -15,7 +15,6 @@
   <h1>List of User</h1>
   <!-- ! implemento codigo java,manejo los datos enviados por el 'Servlet SvUser' -->
 
-
   <% 
     List<User> listUser = (List<User>) request.getSession().getAttribute("userList");//! Me tragigo el atributo que configure anteriormente en mi Servlet
       int count = 1;

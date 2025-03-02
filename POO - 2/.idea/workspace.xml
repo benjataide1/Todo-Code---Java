@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e46e88e4-868b-4857-9746-b5fe7ae9a320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../JavaServerPages - 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaServerPages - 3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Relation - 10/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Relation - 10/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +27,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Test_POO.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "benjaDev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/JavaServerPages - 3"
+    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/POO - 2/Relation - 10"
   }
 }]]></component>
   <component name="RecentsManager">

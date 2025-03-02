@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0e8032e-3ee0-43c6-b6ae-56734ed56e93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_14_2025_9_22_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - 2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Collections - 8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Generics - 13/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Generics - 13/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - 2/Polimorfismo - 3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - 2/Polimorfismo - 3/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,11 +16,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="benjaDev" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
@@ -31,10 +30,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "benjaDev",
+    "git-widget-placeholder": "development",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/benja/Desktop/Todo-Code---Java/JavaServerPages - 3",
+    "last_opened_file_path": "E:/Benja/code/JAVA/Todo Code/JavaServerPages - 3/Servlet-2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
