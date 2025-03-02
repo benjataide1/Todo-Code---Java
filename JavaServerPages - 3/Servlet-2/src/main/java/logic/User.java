@@ -18,7 +18,7 @@ public class User {
     public User() {
     }
 
-    public User(String name, String dni, String lastname, String phone) {
+    public User(String name,  String lastname, String phone,String dni) {
         this.name = name;
         this.dni = dni;
         this.lastname = lastname;
