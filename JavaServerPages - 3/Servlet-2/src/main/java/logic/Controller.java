@@ -14,4 +14,8 @@ public class Controller {
     public List<User> getUsers() {
         return controllerPersistence.getUsers();
     }
+
+    public void deleteUser(int id){
+        controllerPersistence.deleteUser(id);
+    }
 }

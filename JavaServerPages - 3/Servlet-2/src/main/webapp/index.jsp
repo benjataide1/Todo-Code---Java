@@ -2,7 +2,8 @@
 
 <body>
   <h2>Datos User!</h2>
-  <form action="SvUser" method="post"> <!--! De este formulario , al ejecutarlo se va a enviar la informacion a mi Servlet "SvUser"-->
+  <form action="SvUser" method="post">
+    <!--! De este formulario , al ejecutarlo se va a enviar la informacion a mi Servlet "SvUser"-->
     <p><Label>DNI:</Label><input type="text" name="dni"></p>
 
     <p><Label>Name:</Label><input type="text" name="name"></p>
@@ -23,6 +24,17 @@
     <button type="submit">Get User</button>
 
   </form>
+
+
+  <h1> Delete Users</h1>
+  <p>Enter User ID</p>
+
+  <form action="SvDelete" method="post">
+    <p><label>ID: </label><input type="text" name="id_user"></p>  <!--! El parametro que mandamos es el valor del input y ese valor lo tomamos atraves del name 'id_user'-->
+    <button type="submit">Delete User</button>
+
+  </form>
+
 </body>
 
 </html>
