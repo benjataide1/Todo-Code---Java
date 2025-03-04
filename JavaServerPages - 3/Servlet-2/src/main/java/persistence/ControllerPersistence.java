@@ -17,5 +17,8 @@ public class ControllerPersistence {
         return usuJpa.findUserEntities();
     }
 
-
+    //! DELETE
+    public void deleteUser(int id){
+        usuJpa.destroy(id);
+    }
 }

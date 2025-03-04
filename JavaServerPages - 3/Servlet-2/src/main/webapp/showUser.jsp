@@ -23,6 +23,7 @@
   %>
 
    <p><b>Cliente N°: <%= count %></b></p>
+   <p>ID: <%= s.getId() %></p>
    <p>DNI: <%= s.getDni() %></p>
    <p>Nombre: <%= s.getName() %></p>
    <p>Apellido: <%= s.getLastname() %></p>
