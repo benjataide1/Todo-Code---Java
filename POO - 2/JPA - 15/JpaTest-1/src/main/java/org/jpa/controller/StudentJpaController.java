@@ -10,6 +10,7 @@ import java.util.List;
 
 //! Esta Clase Tiene todas las funciones CRUD de mi Entity "Student"
 
+
 public class StudentJpaController {
     private EntityManagerFactory emf = null;
 
@@ -39,6 +40,8 @@ public class StudentJpaController {
         }
     }
 
+
+    
     public void edit(Student student) throws Exception {
         EntityManager em = getEntityManager();
         try {

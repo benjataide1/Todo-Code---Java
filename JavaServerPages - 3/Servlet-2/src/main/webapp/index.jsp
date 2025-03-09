@@ -35,6 +35,14 @@
 
   </form>
 
+  <h1>Update User</h1>
+  <p>Enter User ID</p>
+
+  <form action="SvUpdate" method="get">
+    <p><label>ID: </label><input type="text" name="id_userUp"></p>
+    <button type="submit">Update User</button>
+  </form>
+
 </body>
 
 </html>
