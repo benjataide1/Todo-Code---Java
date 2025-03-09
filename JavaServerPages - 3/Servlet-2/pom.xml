@@ -40,7 +40,7 @@
 
     </dependencies>
     <build>
-        <finalName>myappa</finalName>
+        <finalName>MyApp</finalName>
     </build>
 
 

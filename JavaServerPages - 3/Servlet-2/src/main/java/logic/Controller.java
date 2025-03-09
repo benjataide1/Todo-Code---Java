@@ -18,4 +18,18 @@ public class Controller {
     public void deleteUser(int id){
         controllerPersistence.deleteUser(id);
     }
+
+    public User getUser(int idUpdate) {
+        return controllerPersistence.getUser(idUpdate);
+    }
+
+    public void updateUser(User user) {
+        try {
+            controllerPersistence.updateUser(user);
+        } catch (Exception e) {
+        e.getMessage();
+        e.getLocalizedMessage();
+        e.printStackTrace();
+        }
+    }
 }
