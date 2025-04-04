@@ -1,15 +1,24 @@
 package logic;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS) //! TABLE_PER_CLASS -> hace que mi Clase Persona no Persistencia en mi BD
 public class Person {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //! Las clases Hijas van a tener su propio atributo y ID pero van a implementar la misma estrategia "IDENTITY"
     private int id_person;
+
+    @Basic
     private String  dni;
     private String first_name;
     private String last_name;
     private String phone;
     private String address;
+
+    @Temporal(TemporalType.DATE)
     private Date date;
 
     public Person() {

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Odontologo extends Person {
 
-    private int id_odontologo;
+//    private int id_odontologo;
     private String speciality;
     private Schedule schedule;
     private User user;
@@ -19,9 +19,9 @@ public class Odontologo extends Person {
         this.shifts = shifts;
     }
 
-    public int getId_odontologo() {
-        return id_odontologo;
-    }
+//    public int getId_odontologo() {
+//        return id_odontologo;
+//    }
 
 
     public String getSpeciality() {

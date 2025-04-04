@@ -2,7 +2,7 @@ package logic;
 
 public class Schedule {
 
-    private int id_schedule;
+//    private int id_schedule;
     private String start_time;
     private String end_time;
 
@@ -11,9 +11,9 @@ public class Schedule {
         this.end_time = end_time;
     }
 
-    public int getId_schedule() {
-        return id_schedule;
-    }
+//    public int getId_schedule() {
+//        return id_schedule;
+//    }
 
 
     public String getStart_time() {

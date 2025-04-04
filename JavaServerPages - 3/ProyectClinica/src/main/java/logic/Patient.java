@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Patient extends Person {
 
-    private int id_patient;
+//    private int id_patient;
     private boolean medium_insurance;
     private String blood_group;
     private Responsible responsible;
@@ -19,9 +19,9 @@ public class Patient extends Person {
         this.shifts = shifts;
     }
 
-    public int getId_patient() {
-        return id_patient;
-    }
+//    public int getId_patient() {
+//        return id_patient;
+//    }
 
 
     public boolean isMedium_insurance() {

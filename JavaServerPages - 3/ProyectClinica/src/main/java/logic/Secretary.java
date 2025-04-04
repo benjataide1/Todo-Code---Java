@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Secretary extends Person {
 
-    private int id_secretary;
+//    private int id_secretary;
     private String sector;
     private User user;
 
@@ -15,9 +15,9 @@ public class Secretary extends Person {
         this.user = user;
     }
 
-    public int getId_secretary() {
-        return id_secretary;
-    }
+//    public int getId_secretary() {
+//        return id_secretary;
+//    }
 
     public String getSector() {
         return sector;

@@ -3,7 +3,8 @@ package logic;
 import java.util.Date;
 
 public class Shift {
-    private int id_shift;
+
+//    private int id_shift;
     private Date date;
     private String shift_hours;
     private String afeccion;
@@ -14,9 +15,9 @@ public class Shift {
         this.afeccion = afeccion;
     }
 
-    public int getId_shift() {
-        return id_shift;
-    }
+//    public int getId_shift() {
+//        return id_shift;
+//    }
 
 
     public Date getDate() {

@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Responsible extends Person {
 
-    private int id_responsible;
+//    private int id_responsible;
     private String type_responsible;
 
 
@@ -13,9 +13,9 @@ public class Responsible extends Person {
         this.type_responsible = type_responsible;
     }
 
-    public int getId_responsible() {
-        return id_responsible;
-    }
+//    public int getId_responsible() {
+//        return id_responsible;
+//    }
 
     public String getType_responsible() {
         return type_responsible;

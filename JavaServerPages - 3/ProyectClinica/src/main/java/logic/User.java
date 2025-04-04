@@ -1,7 +1,8 @@
 package logic;
 
 public class User {
-    private int id_user;
+
+//    private int id_user;
     private String name_user;
     private String password_user;
     private String role_user;
@@ -13,9 +14,9 @@ public class User {
         this.role_user = role_user;
     }
 
-    public int getId_user() {
-        return id_user;
-    }
+//    public int getId_user() {
+//        return id_user;
+//    }
 
 
     public String getName_user() {
