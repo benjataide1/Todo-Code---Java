@@ -1,20 +1,25 @@
 package logic;
 
-public class Schedule {
+import javax.persistence.*;
+import java.util.Date;
 
-//    private int id_schedule;
+@Entity
+public class Schedule extends Person {
+
+    @Basic
     private String start_time;
     private String end_time;
 
-    public Schedule(String start_time, String end_time) {
+
+    public Schedule(String dni, String first_name, String last_name, String phone, String address, Date date, String start_time, String end_time) {
+        super(dni, first_name, last_name, phone, address, date);
         this.start_time = start_time;
         this.end_time = end_time;
     }
 
-//    public int getId_schedule() {
-//        return id_schedule;
-//    }
-
+    public Schedule() {
+        super();
+    }
 
     public String getStart_time() {
         return start_time;

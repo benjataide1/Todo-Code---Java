@@ -1,14 +1,22 @@
 package logic;
 
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.Date;
 import java.util.List;
 
+@Entity
 public class Patient extends Person {
 
 //    private int id_patient;
     private boolean medium_insurance;
     private String blood_group;
+    @OneToOne
     private Responsible responsible;
+    @OneToMany
+    @JoinColumn(name = "patien")
     private List<Shift> shifts;
 
     public Patient(String dni, String first_name, String last_name, String phone, String address, Date date, boolean medium_insurance, String blood_group, Responsible responsible, List<Shift> shifts) {
@@ -19,9 +27,9 @@ public class Patient extends Person {
         this.shifts = shifts;
     }
 
-//    public int getId_patient() {
-//        return id_patient;
-//    }
+    public Patient() {
+
+    }
 
 
     public boolean isMedium_insurance() {

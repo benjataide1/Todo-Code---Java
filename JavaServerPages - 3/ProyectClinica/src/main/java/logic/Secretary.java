@@ -1,11 +1,16 @@
 package logic;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import java.util.Date;
+import logic.Patient;
 
+@Entity
 public class Secretary extends Person {
 
 //    private int id_secretary;
     private String sector;
+    @OneToOne
     private User user;
 
 
@@ -15,9 +20,9 @@ public class Secretary extends Person {
         this.user = user;
     }
 
-//    public int getId_secretary() {
-//        return id_secretary;
-//    }
+    public Secretary() {
+
+    }
 
     public String getSector() {
         return sector;

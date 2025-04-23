@@ -1,7 +1,9 @@
 package logic;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
 public class Responsible extends Person {
 
 //    private int id_responsible;
@@ -13,9 +15,9 @@ public class Responsible extends Person {
         this.type_responsible = type_responsible;
     }
 
-//    public int getId_responsible() {
-//        return id_responsible;
-//    }
+    public Responsible() {
+
+    }
 
     public String getType_responsible() {
         return type_responsible;

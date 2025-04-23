@@ -33,6 +33,9 @@ public class Person {
         this.date = date;
     }
 
+    public void setId_person(int id_person) {
+        this.id_person = id_person;
+    }
 
     public int getId_person() {
         return id_person;

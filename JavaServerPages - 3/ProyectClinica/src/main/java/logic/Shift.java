@@ -1,24 +1,34 @@
 package logic;
 
+import javax.persistence.*;
 import java.util.Date;
 
-public class Shift {
+@Entity
+public class Shift extends Person {
 
-//    private int id_shift;
+    @Temporal(TemporalType.DATE)
     private Date date;
+    @Basic
     private String shift_hours;
     private String afeccion;
 
-    public Shift(Date date, String shift_hours, String afeccion) {
+    @ManyToOne
+    @JoinColumn(name = "shift_id") //! En mi BD la entiedad Odontologo en la columna "id_shift" aparece la relacion que tiene con la entidad "Shift"
+    private Odontologo odontologo; //! N turnos Tienes 1 Odontologo, relacion Bilateral,  el nombre de esta variable es la responsable de conectar o establecer la relacion
+    @ManyToOne
+    @JoinColumn(name = "shift_id2")
+    private Patient patien;
+
+    public Shift(String dni, String first_name, String last_name, String phone, String address, Date date, String shift_hours, String afeccion) {
+        super(dni, first_name, last_name, phone, address, date);
         this.date = date;
         this.shift_hours = shift_hours;
         this.afeccion = afeccion;
     }
 
-//    public int getId_shift() {
-//        return id_shift;
-//    }
-
+    public Shift() {
+        super();
+    }
 
     public Date getDate() {
         return date;
