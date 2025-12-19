@@ -1,10 +1,13 @@
 package logic;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
-public class User extends Person {
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id_user;
 
     @Basic
     private String name_user;
@@ -12,8 +15,8 @@ public class User extends Person {
     private String role_user;
 
 
-    public User(String dni, String first_name, String last_name, String phone, String address, Date date, String name_user, String password_user, String role_user) {
-        super(dni, first_name, last_name, phone, address, date);
+    public User( String name_user, String password_user, String role_user) {
+
         this.name_user = name_user;
         this.password_user = password_user;
         this.role_user = role_user;

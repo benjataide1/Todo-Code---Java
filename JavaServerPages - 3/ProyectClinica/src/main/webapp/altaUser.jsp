@@ -46,9 +46,9 @@
                                         <div class="col-10">
                                             <%--                                            <div class="col-md-6">--%>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputNombre" name="nombre" type="text"
+                                                <input class="form-control" id="inputNombre" name="name" type="text"
                                                        placeholder="Ingrese el nombre" required/>
-                                                <label for="inputNombre">Nombre</label>
+                                                <label for="inputNombre">Name</label>
                                             </div>
                                             <%--                                            </div>--%>
                                             <%--                                            <div class="col-md-6">--%>

@@ -60,7 +60,7 @@
         </a>
         <div class="collapse" id="collapseUser" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
           <nav class="sb-sidenav-menu-nested nav">
-            <a class="nav-link" href="listarUsuario">Get User</a>
+            <a class="nav-link" href="showUser.jsp">Get User</a>
             <a class="nav-link" href="altaUser.jsp">User Registration</a>
           </nav>
         </div>

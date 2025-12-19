@@ -15,7 +15,7 @@ public class GenericJpaDAO<T, ID extends Serializable> {
     protected final Class<T> entityClass;
 
     public GenericJpaDAO(Class<T> entityClass) {
-        this.emf = Persistence.createEntityManagerFactory("ProyectClinicaPU");
+        this.emf = Persistence.createEntityManagerFactory("ProjectClinicPU");
         this.entityClass = entityClass;
     }
 
@@ -36,7 +36,6 @@ public class GenericJpaDAO<T, ID extends Serializable> {
         }
     }
 
-
     public void update(T entity) {
         EntityManager em = getEntityManager();
         try {
@@ -50,7 +49,6 @@ public class GenericJpaDAO<T, ID extends Serializable> {
         }
     }
 
-
     public void delete(ID id) {
         EntityManager em = getEntityManager();
         try {
@@ -60,7 +58,8 @@ public class GenericJpaDAO<T, ID extends Serializable> {
                 entity = em.getReference(entityClass, id);
                 entity.toString();
             } catch (EntityNotFoundException enfe) {
-                throw new EntityNotFoundException("La entidad " + entityClass.getSimpleName() + " con id " + id + " ya no existe.");
+                throw new EntityNotFoundException(
+                        "La entidad " + entityClass.getSimpleName() + " con id " + id + " ya no existe.");
             }
             em.remove(entity);
             em.getTransaction().commit();
@@ -70,7 +69,6 @@ public class GenericJpaDAO<T, ID extends Serializable> {
             }
         }
     }
-
 
     public T findById(ID id) {
         EntityManager em = getEntityManager();
@@ -82,7 +80,6 @@ public class GenericJpaDAO<T, ID extends Serializable> {
             }
         }
     }
-
 
     public List<T> findAll() {
         return findAll(true, -1, -1);
@@ -109,7 +106,6 @@ public class GenericJpaDAO<T, ID extends Serializable> {
             }
         }
     }
-
 
     public int count() {
         EntityManager em = getEntityManager();
