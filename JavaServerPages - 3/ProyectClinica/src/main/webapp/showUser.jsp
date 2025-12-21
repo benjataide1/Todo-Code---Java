@@ -1,3 +1,6 @@
+<%@ page import="logic.User" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
 <%@page contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,6 +44,7 @@
                             <th>Id</th>
                             <th>Name</th>
                             <th>Rol</th>
+                            <th style="width:210px">Action</th>
                         </tr>
                         </thead>
                         <tfoot>
@@ -48,14 +52,38 @@
                             <th>Id</th>
                             <th>Name</th>
                             <th>Rol</th>
+                            <th style="width:210px">Action</th>
                         </tr>
                         </tfoot>
+
+                        <%
+                            List<User> listUsers = (List<User>) request.getSession().getAttribute("listUsu");
+                        %>
                         <tbody>
+
+                        <% for (User user : listUsers) { %>
                         <tr>
-                            <td>1</td>
-                            <td>Pepe</td>
-                            <td>Admin</td>
+                            <td> <%= user.getId_user() %> </td>
+                            <td> <%= user.getName_user() %> </td>
+                            <td> <%= user.getRole_user() %> </td>
+
+                            <td style="white-space: nowrap;">
+                                <form name="delete" action="SvDeleteUser" method="post" style="display: inline-block; margin: 0; margin-right: 5px;"> <!-- We execute the Servlet -->
+                                    <button type="submit" class="btn btn-primary btn-sm" style="background-color: red;">
+                                        <i class="fas fa-trash-alt"></i> Delete
+                                    </button>
+                                    <input type="hidden" name="id" value="<%= user.getId_user() %>"> <!-- esto es para mandar el codigo al servlet -->
+                                </form>
+                                <form name="update" action="SvUpdateUser" method="get" style="display: inline-block; margin: 0;">
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                       <i class="fas fa-pencil-alt"></i> Update
+                                    </button>
+                                    <input type="hidden" name="id" value="<%= user.getId_user() %>">
+                                </form>
+                            </td>
                         </tr>
+
+                        <% } %>
                         </tbody>
                     </table>
                 </div>
@@ -73,4 +101,4 @@
 <%--! Scripts--%>
 <%@ include file="components/scripts.jsp" %>
 </body>
-</html
+</html>

@@ -26,6 +26,10 @@ public class User {
         super();
     }
 
+    public int getId_user(){
+        return this.id_user;
+    }
+
     public String getName_user() {
         return name_user;
     }

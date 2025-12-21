@@ -2,6 +2,8 @@ package persistence;
 
 import logic.User;
 
+import java.util.List;
+
 public class ControllerPersistence {
 
     OdontologoJpaController odontologoJpaController = new OdontologoJpaController();
@@ -19,5 +21,19 @@ public class ControllerPersistence {
         userJpaController.create(user);
     }
 
+    public List<User> getUsers(){
+        return userJpaController.findAll();
+    }
 
+    public void deleteUser(int id){
+        userJpaController.delete(id);
+    }
+
+    public User findUser(int id){
+        return userJpaController.findById(id);
+    }
+
+    public void updateUser(User user){
+        userJpaController.update(user);
+    }
 }
