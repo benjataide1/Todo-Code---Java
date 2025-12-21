@@ -13,11 +13,11 @@ public class Shift extends Person {
     private String afeccion;
 
     @ManyToOne
-    @JoinColumn(name = "shift_id") //! En mi BD la entiedad Odontologo en la columna "id_shift" aparece la relacion que tiene con la entidad "Shift"
+    @JoinColumn(name = "id_odonto") //! En mi BD la entiedad Odontologo en la columna "id_shift" aparece la relacion que tiene con la entidad "Shift"
     private Odontologo odontologo; //! N turnos Tienes 1 Odontologo, relacion Bilateral,  el nombre de esta variable es la responsable de conectar o establecer la relacion
     @ManyToOne
-    @JoinColumn(name = "shift_id2")
-    private Patient patien;
+    @JoinColumn(name = "id_patient")
+    private Patient patient;
 
     public Shift(String dni, String first_name, String last_name, String phone, String address, Date date, String shift_hours, String afeccion) {
         super(dni, first_name, last_name, phone, address, date);

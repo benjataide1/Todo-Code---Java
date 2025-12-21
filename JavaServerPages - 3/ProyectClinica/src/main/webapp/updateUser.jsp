@@ -1,3 +1,4 @@
+<%@ page import="logic.User" %>
 <%@page contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,11 +26,13 @@
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h1 class="display-4 mb-3">Alta User</h1>
-                    <p class="lead mb-4">Complete el formulario para registrar un Nuevo Usuario.</p>
+                    <h1 class="display-4 mb-3">Update User</h1>
+                    <p class="lead mb-4">Complete el formulario para actualizar un Usuario.</p>
                 </div>
             </div>
         </div>
+
+            <% User user = (User) request.getSession().getAttribute("updateUser"); %>
 
         <!-- Registration Form -->
         <div id="layoutAuthentication_content">
@@ -42,25 +45,25 @@
                                     <h3 class="text-center font-weight-light my-4">Registro de Usuario</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="SvUser" method="POST">
+                                    <form action="SvUpdateUser" method="POST">
                                         <div class="col-10">
                                             <%--                                            <div class="col-md-6">--%>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputNombre" name="name" type="text"
-                                                       placeholder="Ingrese el nombre" required/>
+                                                       placeholder="Ingrese el nombre" value="<%= user.getName_user() %>" required/>
                                                 <label for="inputNombre">Name</label>
                                             </div>
                                             <%--                                            </div>--%>
                                             <%--                                            <div class="col-md-6">--%>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputPassword" name="password"
-                                                       type="password" placeholder="Ingrese el Password" required/>
+                                                       type="password" placeholder="Ingrese el Password" value="<%= user.getPassword_user() %>" required/>
                                                 <label for="inputPassword">Password</label>
                                             </div>
                                             <%--                                            </div>--%>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputRol" name="rol"
-                                                       type="tel" placeholder="Ingrese el Rol" required/>
+                                                       type="text" placeholder="Ingrese el Rol" value="<%= user.getRole_user()%>" required/>
                                                 <label for="inputRol">Rol</label>
                                             </div>
 
@@ -69,7 +72,7 @@
                                         <div class="mt-4 mb-0">
                                             <div class="d-grid">
                                                 <button class="btn btn-primary btn-block" type="submit">
-                                                    Create User
+                                                    Save User
                                                 </button>
                                             </div>
                                         </div>
