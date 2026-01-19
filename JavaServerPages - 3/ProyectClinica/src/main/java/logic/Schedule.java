@@ -1,24 +1,33 @@
 package logic;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
-public class Schedule extends Person {
+public class Schedule {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id_schedule;
 
     @Basic
     private String start_time;
     private String end_time;
 
 
-    public Schedule(String dni, String first_name, String last_name, String phone, String address, Date date, String start_time, String end_time) {
-        super(dni, first_name, last_name, phone, address, date);
+    public Schedule(String start_time, String end_time) {
         this.start_time = start_time;
         this.end_time = end_time;
     }
 
     public Schedule() {
-        super();
+    }
+
+    public int getId_schedule() {
+        return id_schedule;
+    }
+
+    public void setId_schedule(int id_schedule) {
+        this.id_schedule = id_schedule;
     }
 
     public String getStart_time() {

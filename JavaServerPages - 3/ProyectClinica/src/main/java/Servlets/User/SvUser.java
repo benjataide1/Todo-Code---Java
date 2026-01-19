@@ -1,4 +1,4 @@
-package Servlets;
+package Servlets.User;
 
 import logic.Controller;
 import logic.User;
@@ -38,22 +38,6 @@ public class SvUser extends HttpServlet {
         String rol = req.getParameter("rol");
 
         controller.createUser(name, password, rol);
-
-        System.out.println(name);
-        System.out.println(password);
-        System.out.println(rol);
-
-
-        HttpSession session = req.getSession();
-        System.out.println(session);
-
-        session.setAttribute("usuario", "Suscribite TodoCode");
-        session.setAttribute("roll", "ADMIN");
-
-
-        String usuario = (String) session.getAttribute("usuario");
-        String roll = (String) session.getAttribute("rol");
-
 
         resp.sendRedirect("index.jsp");
 

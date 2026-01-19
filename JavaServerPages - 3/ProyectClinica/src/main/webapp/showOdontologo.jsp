@@ -1,5 +1,5 @@
-<%@ page import="logic.User" %>
 <%@ page import="java.util.List" %>
+<%@ page import="logic.Odontologo" %>
 <%@page contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,7 @@
             <h1 class="mt-4">Tables</h1>
             <div class="card mb-4">
                 <div class="card-body">
-                    Users
+                    Odontologos
                 </div>
             </div>
             <div class="card mb-4">
@@ -42,7 +42,9 @@
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
-                            <th>Rol</th>
+                            <th>Last Name</th>
+                            <th>Phone</th>
+                            <th>speciality</th>
                             <th style="width:210px">Action</th>
                         </tr>
                         </thead>
@@ -50,34 +52,38 @@
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
-                            <th>Rol</th>
+                            <th>Last Name</th>
+                            <th>Phone</th>
+                            <th>speciality</th>
                             <th style="width:210px">Action</th>
                         </tr>
                         </tfoot>
 
                         <%
-                            List<User> listUsers = (List<User>) request.getSession().getAttribute("listUsu");
+                            List<Odontologo> listOdonto = (List<Odontologo>) request.getSession().getAttribute("listOdonto");
                         %>
                         <tbody>
 
-                        <% for (User user : listUsers) { %>
+                        <% for (Odontologo odo : listOdonto) { %>
                         <tr>
-                            <td> <%= user.getId_user() %> </td>
-                            <td> <%= user.getName_user() %> </td>
-                            <td> <%= user.getRole_user() %> </td>
+                            <td> <%= odo.getId_person() %> </td>
+                            <td> <%= odo.getFirst_name() %> </td>
+                            <td> <%= odo.getLast_name()%> </td>
+                            <td> <%= odo.getPhone() %> </td>
+                            <td> <%= odo.getSpeciality() %> </td>
 
                             <td style="white-space: nowrap;">
-                                <form name="delete" action="SvDeleteUser" method="post" style="display: inline-block; margin: 0; margin-right: 5px;"> <!-- We execute the Servlet -->
+                                <form name="delete" action="SvDeleteOdo" method="post" style="display: inline-block; margin: 0; margin-right: 5px;"> <!-- We execute the Servlet -->
                                     <button type="submit" class="btn btn-primary btn-sm" style="background-color: red;">
                                         <i class="fas fa-trash-alt"></i> Delete
                                     </button>
-                                    <input type="hidden" name="id" value="<%= user.getId_user() %>"> <!-- esto es para mandar el codigo al servlet -->
+                                    <input type="hidden" name="id" value="<%= odo.getId_person() %>"> <!-- esto es para mandar el codigo al servlet -->
                                 </form>
-                                <form name="update" action="SvUpdateUser" method="get" style="display: inline-block; margin: 0;">
+                                <form name="update" action="SvUpdateOdonto" method="get" style="display: inline-block; margin: 0;">
                                     <button type="submit" class="btn btn-primary btn-sm">
-                                       <i class="fas fa-pencil-alt"></i> Update
+                                        <i class="fas fa-pencil-alt"></i> Update
                                     </button>
-                                    <input type="hidden" name="id" value="<%= user.getId_user() %>">
+                                    <input type="hidden" name="id" value="<%= odo.getId_person() %>">
                                 </form>
                             </td>
                         </tr>
