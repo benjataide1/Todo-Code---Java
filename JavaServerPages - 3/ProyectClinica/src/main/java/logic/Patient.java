@@ -15,8 +15,7 @@ public class Patient extends Person {
     private String blood_group;
     @OneToOne
     private Responsible responsible;
-    @OneToMany
-    @JoinColumn(name = "patien")
+    @OneToMany(mappedBy = "patient")
     private List<Shift> shifts;
 
     public Patient(String dni, String first_name, String last_name, String phone, String address, Date date, boolean medium_insurance, String blood_group, Responsible responsible, List<Shift> shifts) {

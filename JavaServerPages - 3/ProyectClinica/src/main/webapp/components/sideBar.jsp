@@ -11,6 +11,20 @@
         </a>
         <div class="sb-sidenav-menu-heading">Management</div>
 
+        <!-- User Menu -->
+        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUser"
+           aria-expanded="false" aria-controls="collapseUser">
+          <div class="sb-nav-link-icon"><i class="fas fa-solid fa-user"></i></div>
+          User
+          <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        </a>
+        <div class="collapse" id="collapseUser" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+          <nav class="sb-sidenav-menu-nested nav">
+            <a class="nav-link" href="SvUser">Get User</a>
+            <a class="nav-link" href="altaUser.jsp">User Registration</a>
+          </nav>
+        </div>
+
         <!-- Dentist Menu -->
         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDentist"
            aria-expanded="false" aria-controls="collapseDentist">
@@ -20,7 +34,7 @@
         </a>
         <div class="collapse" id="collapseDentist" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
           <nav class="sb-sidenav-menu-nested nav">
-            <a class="nav-link" href="listarOdontologos">Get Dentist</a>
+            <a class="nav-link" href="registerOdonto">Get Dentist</a>
             <a class="nav-link" href="altaOdontologo.jsp">Dentist Registration</a>
           </nav>
         </div>
@@ -40,6 +54,7 @@
               Get Patient
               <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
             </a>
+            <a class="nav-link" href="altaPatient.jsp">Patient Registration</a>
             <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
                  data-bs-parent="#sidenavAccordionPages">
               <nav class="sb-sidenav-menu-nested nav">
@@ -51,19 +66,6 @@
           </nav>
         </div>
 
-        <!-- User Menu -->
-        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUser"
-           aria-expanded="false" aria-controls="collapseUser">
-          <div class="sb-nav-link-icon"><i class="fas fa-solid fa-user"></i></div>
-          Usuario
-          <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-        </a>
-        <div class="collapse" id="collapseUser" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-          <nav class="sb-sidenav-menu-nested nav">
-            <a class="nav-link" href="SvUser">Get User</a>
-            <a class="nav-link" href="altaUser.jsp">User Registration</a>
-          </nav>
-        </div>
 
       </div>
     </div>

@@ -26,12 +26,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <h1 class="display-4 mb-3">Alta User</h1>
-                    <p class="lead mb-4">Complete el formulario para registrar un Nuevo Usuario.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Registration Form -->
+
         <div id="layoutAuthentication_content">
             <main>
                 <div class="container">

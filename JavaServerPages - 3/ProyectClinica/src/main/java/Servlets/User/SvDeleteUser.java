@@ -1,8 +1,7 @@
-package Servlets;
+package Servlets.User;
 
 import logic.Controller;
 
-import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.io.IOException;
