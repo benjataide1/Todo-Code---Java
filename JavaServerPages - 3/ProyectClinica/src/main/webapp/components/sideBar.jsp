@@ -42,31 +42,30 @@
         <!-- Patient Menu -->
         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePatient"
            aria-expanded="false" aria-controls="collapsePatient">
-          <div class="sb-nav-link-icon"><i class="fas fa-solid fa-hospital-user"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-solid fa-user-doctor"></i></div>
           Patient
           <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
         </a>
-        <div class="collapse" id="collapsePatient" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-          <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-               data-bs-target="#pagesCollapseAuth" aria-expanded="false"
-               aria-controls="pagesCollapseAuth">
-              Get Patient
-              <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-            </a>
+        <div class="collapse" id="collapsePatient" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+          <nav class="sb-sidenav-menu-nested nav">
+            <a class="nav-link" href="SvPatient">Get Patient</a>
             <a class="nav-link" href="altaPatient.jsp">Patient Registration</a>
-            <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
-                 data-bs-parent="#sidenavAccordionPages">
-              <nav class="sb-sidenav-menu-nested nav">
-                <a class="nav-link" href="login.html">Login</a>
-                <a class="nav-link" href="register.html">Register</a>
-                <a class="nav-link" href="password.html">Forgot Password</a>
-              </nav>
-            </div>
           </nav>
         </div>
 
-
+        <!-- Shift Menu -->
+        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseShift"
+           aria-expanded="false" aria-controls="collapseShift">
+          <div class="sb-nav-link-icon"><i class="fas fa-solid fa-user-doctor"></i></div>
+          Shift
+          <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        </a>
+        <div class="collapse" id="collapseShift" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+          <nav class="sb-sidenav-menu-nested nav">
+            <a class="nav-link" href="rasdf">Get Shifts</a>
+            <a class="nav-link" href="sdfjsdf.jsp">Shift Registration</a>
+          </nav>
+        </div>
       </div>
     </div>
 

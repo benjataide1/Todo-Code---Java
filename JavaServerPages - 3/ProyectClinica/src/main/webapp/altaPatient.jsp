@@ -1,5 +1,4 @@
 <%@page import="logic.Controller"%>
-<%@page import="logic.Shift"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
@@ -56,14 +55,14 @@
                                                 <div class="form-floating mb-3">
                                                     <input class="form-control" id="inputLastname" name="lastname"
                                                            type="text" placeholder="Enter your Last Name" required/>
-                                                    <label for="inputLastname">Apellido</label>
+                                                    <label for="inputLastname">Last Name</label>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input class="form-control" id="inputDNI" name="DNI" type="text"
+                                                    <input class="form-control" id="inputDNI" name="dni" type="text"
                                                            placeholder="Enter your DNI" required/>
                                                     <label for="inputDNI">DNI</label>
                                                 </div>
-                                                <%--                                            </div>--%>
+
                                                 <div class="form-floating mb-3">
                                                     <input class="form-control" id="inputPhone" name="phone"
                                                            type="tel" placeholder="Enter your Phone Number" required/>
