@@ -1,6 +1,7 @@
 package logic;
 
 import persistence.ControllerPersistence;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -40,17 +41,16 @@ public class Controller {
     }
 
 
-
     //? Odontologo
 
     public void createOdontologo(String name, String lastname, String dni, String phone, String address, String dateString, String specialilty, String start_time, String end_time, int id) throws ParseException {
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = sdf.parse(dateString);
-        Schedule schedule = new Schedule(start_time,end_time);
+        Schedule schedule = new Schedule(start_time, end_time);
         User user = this.findUser(id);
 
-        Odontologo odontologo = new Odontologo(name,lastname,dni,phone,address,date,specialilty,schedule,user);
+        Odontologo odontologo = new Odontologo(name, lastname, dni, phone, address, date, specialilty, schedule, user);
 
         controllerPersistence.createOdontologo(odontologo);
     }
@@ -73,4 +73,46 @@ public class Controller {
     public void updateOdo(Odontologo odo) {
         controllerPersistence.updateOdo(odo);
     }
+
+    //? Patient
+    public void createPatient(String name, String lastname, String dni, String phone, String address, String dateString, String bloodGroup, boolean insurance, String responsibleName, String responsibleLastName, String responsibleDni, String responsibleAddress, String responsiblePhone, String responsibleDateString, String responsibleType) throws ParseException {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sdf.parse(dateString);
+        Date responsibleDate = sdf.parse(responsibleDateString);
+
+        Responsible responsible = new Responsible(responsibleDni, responsibleName, responsibleLastName, responsiblePhone, responsibleAddress, responsibleDate, responsibleType);
+
+        Patient patient = new Patient(dni, name, lastname, phone, address, date, insurance, bloodGroup, responsible);
+
+        controllerPersistence.createPatient(patient);
+    }
+
+    public List<Patient> getPatients() {
+        return controllerPersistence.getPatients();
+    }
+
+    public void deletePatient(int id) {
+
+        controllerPersistence.deletePatient(id);
+    }
+
+    public Patient findPatient(int id) {
+        return controllerPersistence.findPatient(id);
+    }
+
+    public void updatePatient(Patient patient) {
+        controllerPersistence.updatePatient(patient);
+    }
+
+
+    //? Responsible
+    public List<Responsible> getResponsible() {
+        return controllerPersistence.getResponsible();
+    }
+
+    public Responsible findResponsible(int id) {
+        return controllerPersistence.findResponsible(id);
+    }
+
 }

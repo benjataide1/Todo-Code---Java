@@ -1,8 +1,6 @@
 package persistence;
 
-import logic.Odontologo;
-import logic.Shift;
-import logic.User;
+import logic.*;
 
 import java.util.List;
 
@@ -18,6 +16,7 @@ public class ControllerPersistence {
     UserJpaController userJpaController = new UserJpaController();
 
 
+    //! User
 
     public void createUser(User user) {
         userJpaController.create(user);
@@ -64,5 +63,38 @@ public class ControllerPersistence {
 
     public void updateOdo(Odontologo odontologo) {
         odontologoJpaController.update(odontologo);
+    }
+
+    //! Patient
+
+    public void createPatient(Patient patient) {
+        patientJpaController.create(patient);
+    }
+
+    public List<Patient> getPatients() {
+        return patientJpaController.findAll();
+    }
+
+    public void deletePatient(int id) {
+        patientJpaController.delete(id);
+    }
+
+    public Patient findPatient(int id) {
+    return patientJpaController.findById(id);
+    }
+
+
+    public void updatePatient(Patient patient) {
+        patientJpaController.update(patient);
+    }
+
+
+    //! Responsible
+    public List<Responsible> getResponsible() {
+        return responsibleJpaController.findAll();
+    }
+
+    public Responsible findResponsible(int id) {
+    return responsibleJpaController.findById(id);
     }
 }
