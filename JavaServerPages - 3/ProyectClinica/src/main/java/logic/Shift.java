@@ -26,10 +26,12 @@ public class Shift {
     @JoinColumn(name = "id_patient")
     private Patient patient;
 
-    public Shift(Date date, String shift_hours, String afeccion) {
+    public Shift(Date date, String shift_hours, String afeccion, Odontologo odontologo, Patient patient) {
         this.date = date;
         this.shift_hours = shift_hours;
         this.afeccion = afeccion;
+        this.odontologo = odontologo;
+        this.patient = patient;
     }
 
     public Shift() {
