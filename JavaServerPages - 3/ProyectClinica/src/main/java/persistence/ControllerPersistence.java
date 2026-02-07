@@ -97,4 +97,21 @@ public class ControllerPersistence {
     public Responsible findResponsible(int id) {
     return responsibleJpaController.findById(id);
     }
+
+    //! Shift
+    public void createShift(Shift shift) {
+        shiftJpaController.create(shift);
+    }
+
+    public void deleteShift(int id) {
+      shiftJpaController.delete(id);
+    }
+
+    public Shift findShift(int id) {
+       return shiftJpaController.findById(id);
+    }
+
+    public void updateShift(Shift shift) {
+        shiftJpaController.update(shift);
+    }
 }

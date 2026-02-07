@@ -62,8 +62,8 @@
         </a>
         <div class="collapse" id="collapseShift" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
           <nav class="sb-sidenav-menu-nested nav">
-            <a class="nav-link" href="rasdf">Get Shifts</a>
-            <a class="nav-link" href="sdfjsdf.jsp">Shift Registration</a>
+            <a class="nav-link" href="SvShift">Get Shifts</a>
+            <a class="nav-link" href="altaShift.jsp">Shift Registration</a>
           </nav>
         </div>
       </div>

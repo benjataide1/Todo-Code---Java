@@ -36,10 +36,6 @@ public class Controller {
         controllerPersistence.updateUser(user);
     }
 
-    public List<Shift> getShifts() {
-        return controllerPersistence.getShifts();
-    }
-
 
     //? Odontologo
 
@@ -49,8 +45,7 @@ public class Controller {
         Date date = sdf.parse(dateString);
         Schedule schedule = new Schedule(start_time, end_time);
         User user = this.findUser(id);
-
-        Odontologo odontologo = new Odontologo(name, lastname, dni, phone, address, date, specialilty, schedule, user);
+        Odontologo odontologo = new Odontologo(dni,name,lastname,phone,address,date,specialilty,schedule,user);
 
         controllerPersistence.createOdontologo(odontologo);
     }
@@ -115,4 +110,34 @@ public class Controller {
         return controllerPersistence.findResponsible(id);
     }
 
+    //? Shift
+    public void createShift(String affecion, String dateString, String hour, int idOdo, int idPatient) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sdf.parse(dateString);
+
+        Odontologo odontologo = this.findOdontologo(idOdo);
+        Patient patient = this.findPatient(idPatient);
+
+        Shift shift = new Shift(date,hour,affecion,odontologo,patient);
+
+        controllerPersistence.createShift(shift);
+    }
+
+    public List<Shift> getShifts() {
+        return controllerPersistence.getShifts();
+    }
+
+
+    public void deleteShift(int id) {
+
+        controllerPersistence.deleteShift(id);
+    }
+
+    public Shift findShift(int id) {
+        return controllerPersistence.findShift(id);
+    }
+
+    public void updateShift(Shift shift) {
+        controllerPersistence.updateShift(shift);
+    }
 }
