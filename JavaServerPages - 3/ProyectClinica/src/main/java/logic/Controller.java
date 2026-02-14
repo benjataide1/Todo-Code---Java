@@ -4,6 +4,7 @@ import persistence.ControllerPersistence;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class Controller {
         Date date = sdf.parse(dateString);
         Schedule schedule = new Schedule(start_time, end_time);
         User user = this.findUser(id);
-        Odontologo odontologo = new Odontologo(dni,name,lastname,phone,address,date,specialilty,schedule,user);
+        Odontologo odontologo = new Odontologo(dni, name, lastname, phone, address, date, specialilty, schedule, user);
 
         controllerPersistence.createOdontologo(odontologo);
     }
@@ -118,7 +119,7 @@ public class Controller {
         Odontologo odontologo = this.findOdontologo(idOdo);
         Patient patient = this.findPatient(idPatient);
 
-        Shift shift = new Shift(date,hour,affecion,odontologo,patient);
+        Shift shift = new Shift(date, hour, affecion, odontologo, patient);
 
         controllerPersistence.createShift(shift);
     }
@@ -139,5 +140,21 @@ public class Controller {
 
     public void updateShift(Shift shift) {
         controllerPersistence.updateShift(shift);
+    }
+
+    //? Validation
+    public boolean validationUser(String user, String password) {
+        boolean ingreso = false;
+        List<User> listuser = new ArrayList<User>();
+        listuser = controllerPersistence.getUsers();
+
+        for (User u : listuser) {
+            if (u.getName_user().equals(user) && u.getPassword_user().equals(password)) {
+                ingreso = true;
+            } else {
+                ingreso = false;
+            }
+        }
+        return ingreso;
     }
 }

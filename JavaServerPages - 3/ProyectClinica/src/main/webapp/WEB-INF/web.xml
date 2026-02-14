@@ -4,4 +4,11 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <!-- Página de bienvenida al entrar a la app (ruta /) -->
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <!-- fallback opcional si algún día movés el login -->
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>
