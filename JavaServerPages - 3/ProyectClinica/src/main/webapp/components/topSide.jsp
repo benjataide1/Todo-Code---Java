@@ -71,10 +71,7 @@
     Dental Clinic Pro
     <i class="fas fa-tooth"></i>
   </a>
-  <!-- Sidebar Toggle-->
-  <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
-    <i class="fas fa-bars"></i>
-  </button>
+
   <!-- Navbar Search-->
   <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"></form>
 
@@ -87,9 +84,6 @@
         <span class="ms-1"><%= request.getSession().getAttribute("user")%></span>
       </a>
       <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0" aria-labelledby="navbarDropdown" style="border-radius: 12px; margin-top: 0.5rem;">
-        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Profile</a></li>
-        <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Settings</a></li>
-        <li><hr class="dropdown-divider" /></li>
         <li><a class="dropdown-item" href="Login"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
       </ul>
     </li>
