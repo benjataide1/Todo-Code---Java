@@ -34,13 +34,6 @@
         <i class="fas fa-tooth footer-icon me-1"></i>
         <span>&copy; Dental Clinic Pro 2026 - All rights reserved</span>
       </div>
-      <div>
-        <a href="#"><i class="fas fa-shield-alt me-1"></i>Privacy Policy</a>
-        <span class="mx-2">&middot;</span>
-        <a href="#"><i class="fas fa-file-contract me-1"></i>Terms &amp; Conditions</a>
-        <span class="mx-2">&middot;</span>
-        <a href="#"><i class="fas fa-question-circle me-1"></i>Support</a>
-      </div>
     </div>
   </div>
 </footer>

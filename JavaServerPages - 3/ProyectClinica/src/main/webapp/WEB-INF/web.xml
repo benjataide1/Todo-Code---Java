@@ -5,10 +5,28 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-  <!-- Página de bienvenida al entrar a la app (ruta /) -->
+  <!--
+    AuthFilter:
+    - Se ejecuta en CADA request (/*)
+    - Si no hay sesión (user), redirige a sinLogin.jsp
+    - Esto evita que accedan a páginas protegidas escribiendo la URL a mano.
+  -->
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>Servlets.Filters.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!--
+    welcome-file-list:
+    - Define qué página se abre cuando entrás a la raíz de la app: /ProyectClinica/
+    - Primero intenta login.jsp y, si no existe, usa index.jsp como fallback.
+  -->
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
-    <!-- fallback opcional si algún día movés el login -->
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

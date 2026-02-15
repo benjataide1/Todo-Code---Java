@@ -114,4 +114,17 @@ public class ControllerPersistence {
     public void updateShift(Shift shift) {
         shiftJpaController.update(shift);
     }
+
+    //* counts
+    public int getNumPatients() {
+        return patientJpaController.count();
+    }
+
+    public int getNumDentist() {
+        return odontologoJpaController.count();
+    }
+
+    public int getNumShift() {
+        return shiftJpaController.count();
+    }
 }

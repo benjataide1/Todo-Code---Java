@@ -17,6 +17,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0;
+        }
+
+        /* Fix: avoid SB Admin auth wrappers constraining the page */
+        body.error-page #layoutAuthentication,
+        body.error-page #layoutAuthentication_content,
+        body.error-page main {
+            width: 100%;
+        }
+
+        body.error-page #layoutAuthentication_content {
+            display: flex;
+            flex: 1 1 auto;
+            min-height: 100vh;
+        }
+
+        body.error-page main {
+            display: flex;
+            flex: 1 1 auto;
+            align-items: center;
+        }
+
+        body.error-page .row.min-vh-100 {
+            min-height: 100vh !important;
         }
 
         .error-card {
@@ -120,9 +144,9 @@
 <div id="layoutAuthentication">
     <div id="layoutAuthentication_content">
         <main>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-7">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row min-vh-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6 col-xl-5">
                         <div class="card error-card border-0">
                             <div class="card-header text-center">
                                 <div class="error-icon">

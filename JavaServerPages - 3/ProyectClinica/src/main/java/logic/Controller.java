@@ -157,4 +157,18 @@ public class Controller {
         }
         return ingreso;
     }
+
+    //* Counts
+
+    public int getNumPatients() {
+        return controllerPersistence.getNumPatients();
+    }
+
+    public int getNumDentist() {
+        return controllerPersistence.getNumDentist();
+    }
+
+    public int getNumShift() {
+        return controllerPersistence.getNumShift();
+    }
 }
