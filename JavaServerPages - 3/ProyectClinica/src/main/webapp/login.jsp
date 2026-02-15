@@ -329,17 +329,6 @@
                            autocomplete="current-password" />
                   </div>
 
-                  <!-- Remember Me Checkbox -->
-                  <div class="form-check">
-                    <input class="form-check-input"
-                           id="inputRememberPassword"
-                           type="checkbox"
-                           value="" />
-                    <label class="form-check-label" for="inputRememberPassword">
-                      Keep me signed in
-                    </label>
-                  </div>
-
                   <!-- Submit Button -->
                   <div class="d-grid mt-4">
                     <button class="btn btn-primary btn-login" type="submit">
