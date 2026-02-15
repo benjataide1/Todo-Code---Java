@@ -84,7 +84,7 @@
         <span class="ms-1"><%= request.getSession().getAttribute("user")%></span>
       </a>
       <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0" aria-labelledby="navbarDropdown" style="border-radius: 12px; margin-top: 0.5rem;">
-        <li><a class="dropdown-item" href="Login"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+        <li><a class="dropdown-item" href="login.jsp"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
       </ul>
     </li>
   </ul>
