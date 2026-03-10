@@ -169,8 +169,6 @@ This project was developed for educational and professional portfolio purposes.
 ## 👨‍💻 Author
 
 **Benjamin** - Backend Developer
-- LinkedIn: [Your profile]
-- Portfolio: [Your website]
 
 ---
 
