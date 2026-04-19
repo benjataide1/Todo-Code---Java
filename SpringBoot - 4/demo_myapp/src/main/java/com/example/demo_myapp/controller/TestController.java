@@ -21,7 +21,7 @@ public class TestController {
 
     @GetMapping("/full/{name}/{lastname}/{age}")
     public String fullInformation(@PathVariable String name, @PathVariable String lastname, @PathVariable Integer age){
-        return "Hello "+name+" "+lastname+" - "+age;
+        return "Hello: "+name+" "+lastname+" - "+age;
     }
 
 }
