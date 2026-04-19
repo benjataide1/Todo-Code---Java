@@ -1,16 +1,27 @@
 package com.example.demo_myapp.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 //@RestController - Esto es una API o EndPoint
-@RestController("/test") // ("/url")
+@RestController // Puedo Agrega un Prefijo ("/url")
 public class TestController {
 
-    @GetMapping("/hello") // ("/url")
+    @GetMapping("/") // ("/url")
     public String sayHello(){
-     return "Say Hello";
+     return "Spring Boot is a tool for develop APIs in Java";
     }
 
+    //? PathVariable, Pass parameters in the URL
+    @GetMapping("/hi/{name}")
+    public String sayMyName(@PathVariable String name){
+        return "Hello "+name;
+    }
+
+    @GetMapping("/full/{name}/{lastname}/{age}")
+    public String fullInformation(@PathVariable String name, @PathVariable String lastname, @PathVariable Integer age){
+        return "Hello "+name+" "+lastname+" - "+age;
+    }
 
 }
