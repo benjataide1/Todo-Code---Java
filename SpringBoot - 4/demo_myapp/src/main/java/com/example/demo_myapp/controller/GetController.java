@@ -4,7 +4,9 @@ import org.springframework.web.bind.annotation.*;
 
 //@RestController - Esto es una API o EndPoint
 @RestController // Puedo Agrega un Prefijo ("/url")
-public class TestController {
+public class GetController {
+
+    //! Different types of params
 
     @GetMapping("/") // ("/url")
     public String sayHello(){
@@ -20,6 +22,12 @@ public class TestController {
     @GetMapping("/full/{name}/{lastname}/{age}")
     public String fullInformation(@PathVariable String name, @PathVariable String lastname, @PathVariable Integer age){
         return "Hello: "+name+" "+lastname+" - "+age;
+    }
+
+    //? RequestParam
+    @GetMapping("/bye") //localhost:8080/bye?name=John&profession=Developer&age=30
+    public String sayBye(@RequestParam String name, @RequestParam String profession, @RequestParam Integer age){
+        return "Bye: "+name+" "+profession+" - "+age;
     }
 
 }
