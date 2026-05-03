@@ -10,4 +10,9 @@ public class Client {
     private String name;
     private String lastname;
 
+    public Client(Long id, String lastname, String name) {
+        this.id = id;
+        this.lastname = lastname;
+        this.name = name;
+    }
 }
