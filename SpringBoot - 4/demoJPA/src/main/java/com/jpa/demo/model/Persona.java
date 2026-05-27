@@ -1,9 +1,6 @@
 package com.jpa.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,4 +14,10 @@ public class Persona {
     private String name;
     private String lastname;
     private  int age;
+
+    @OneToOne
+    @JoinColumn(name = "mascota_id" , referencedColumnName = "id_mascota")
+    //1 - name = Nombre de la columna que hace referencia a la tabla mascota en la tabla persona
+    //2 - referencedColumnName = nombre de la columna id en la tabla mascota
+    private Mascota unaMascota;
 }
