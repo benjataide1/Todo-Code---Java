@@ -1,10 +1,16 @@
 package com.jpa.demo.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Persona {
 
@@ -15,9 +21,6 @@ public class Persona {
     private String lastname;
     private  int age;
 
-    @OneToOne
-    @JoinColumn(name = "mascota_id" , referencedColumnName = "id_mascota")
-    //1 - name = Nombre de la columna que hace referencia a la tabla mascota en la tabla persona
-    //2 - referencedColumnName = nombre de la columna id en la tabla mascota
-    private Mascota unaMascota;
+    @OneToMany
+    private List<Mascota> listaMascotas;
 }
