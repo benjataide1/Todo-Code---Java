@@ -5,7 +5,14 @@
     <title>Saludo Benja</title>
 </head>
 <body>
-<h1>Hello, My friend Benjamin</h1>
+<!--!
+- Etiqueta `th` para decir que vamos a usar Thymeleaf
+- Especifico el tipo de dato que uso `:text`
+- Dentro del `text` pongo lo que quiera pero con '' comillas simple
+- Ademas pongo entre ${} el atributo que asigen o envie desde el @Controller
+-->
+
+<h1 th:text="'Hello! - ' + ${name}"></h1>
 
 
 </body>
