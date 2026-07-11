@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+
+<h1>Resultado</h1>
+<table>
+
+    <tr>
+        <th>Nombre completo</th>
+        <th>Edad</th>
+        <th>Estado Edad</th>
+    </tr>
+
+    <tr>
+        <td th:text="${nombreCompleto}"></tdt> <!-- Mismo nombre que el atributo-->
+        <td th:text="${edad}"></td>
+        <td th:text="${tipoEdad}"></td>
+    </tr>
+</table>
+
+<p th:if="${edad>=18}">
+    Puede acceder al contenido
+</p>
+<p th:unless="${edad>=18}"> <!-- Debe tener la misma condicion del if , solo cambia por unless -->
+    No puede acceder al contenido
+</p>
+</body>
+</html>
