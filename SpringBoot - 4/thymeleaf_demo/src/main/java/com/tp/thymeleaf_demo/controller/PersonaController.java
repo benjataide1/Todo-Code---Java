@@ -1,39 +1,32 @@
 package com.tp.thymeleaf_demo.controller;
 
+import com.tp.thymeleaf_demo.model.Persona;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class PersonaController {
 
     @GetMapping("/")
-    public String mostrarFormulario() {
+    public String mostrarFormulario(Model model) {
+        model.addAttribute("persona", new Persona()); //Pasamos al formulario el Objeto Persona
         return "formulario"; //retornamos el formulario.html
     }
 
     @PostMapping("/procesar")
-    public String procesarFormulario(
-            @RequestParam String nombre,
-            @RequestParam String apellido,
-            @RequestParam int edad,
-            Model model) {
+    public String procesarFormulario(Persona persona, Model model) {
+        //Recibimos por parametro al objeto persona creado en el formulario
 
-        String nombreCompleto = nombre + " " + apellido;
+        //Mando como atributo al Objeto persona
+        model.addAttribute("persona", persona);
 
-        String tipoEdad;
-        if (edad >= 18) {
-            tipoEdad = "Mayor de edad";
+        if (persona.getAge() >= 18) {
+            model.addAttribute("tipoEdad", "Mayor de edad");
         } else {
-            tipoEdad = "Menor de edad";
+            model.addAttribute("tipoEdad", "Menor de edad");
         }
-
-        // Enviamos datos a la vista
-        model.addAttribute("nombreCompleto", nombreCompleto);
-        model.addAttribute("edad", edad);
-        model.addAttribute("tipoEdad", tipoEdad);
 
         return "resultado";
     }
