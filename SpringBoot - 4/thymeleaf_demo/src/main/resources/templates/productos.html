@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+</head>
+<body>
+<h1>Lista de Productos</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Precio</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <!--
+    Traemos la variable 'listaProductos' y lo asignamos a una variable temporal 'producto',
+    Cada iteracion es un elemento nuevo en HTML
+    -->
+    <tr th:each="producto : ${listaProductos}">
+        <th th:text="${producto.id}"></th>
+        <td th:text="${producto.nombre}"></td>
+        <td th:text="${producto.marca}"></td>
+        <td th:text="'$ ' +${producto.precio}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
