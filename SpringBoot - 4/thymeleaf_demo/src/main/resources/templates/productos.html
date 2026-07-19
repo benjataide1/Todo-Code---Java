@@ -5,8 +5,9 @@
     <title>Productos</title>
 </head>
 <body>
-<h1>Lista de Productos</h1>
 
+<div th:replace="~{fragments::header}"></div>
+<h1>Lista de Productos</h1>
 <table>
     <thead>
     <tr>
@@ -30,6 +31,8 @@
     </tr>
     </tbody>
 </table>
+
+<div th:replace="~{fragments::footer}"></div>
 
 </body>
 </html>

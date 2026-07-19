@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class PersonaController {
 
-    @GetMapping("/")
+    @GetMapping("/persona")
     public String mostrarFormulario(Model model) {
         model.addAttribute("persona", new Persona()); //Pasamos al formulario el Objeto Persona
         return "formulario"; //retornamos el formulario.html

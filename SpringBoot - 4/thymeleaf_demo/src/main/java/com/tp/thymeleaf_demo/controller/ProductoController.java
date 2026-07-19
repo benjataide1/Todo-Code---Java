@@ -11,6 +11,12 @@ import java.util.List;
 @Controller
 public class ProductoController {
 
+
+    @GetMapping("/")
+    public String index() {
+        return "index";
+    }
+
     @GetMapping("/productos")
     public String mostrarProductos(Model model) {
 
